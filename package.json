@@ -17,7 +17,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "dev": "npx webpack && webpack serve",
+    "dev": "webpack serve",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,8 +43,10 @@
   },
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
-    "webpack": "^5.11.1",
-    "webpack-cli": "^4.3.1",
-    "webpack-dev-server": "^3.11.1"
+    "html-webpack-plugin": "^4.5.1",
+    "react-hot-loader": "^4.13.0",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }

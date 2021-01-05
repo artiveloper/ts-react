@@ -1,16 +1,20 @@
 const path = require("path");
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: "development", // production
   devtool: "eval", // hidden-source-map,
-  resolve: {
-    extensions: [".jsx", ".js", ".tsx", ".ts"],
-  },
 
   entry: {
     app: "./src/index",
   },
+
+  resolve: {
+    modules: ["node_modules"],
+    extensions: [".jsx", ".js", ".tsx", ".ts"],
+  },
+
   module: {
     rules: [
       {
@@ -19,16 +23,24 @@ module.exports = {
       },
     ],
   },
-  plugins: [],
+
   output: {
     path: path.join(__dirname, "/public/dist"),
-    filename: "app.js",
+    filename: "[name].js",
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+      hash: true,
+    })
+  ],
+
   devServer: {
     contentBase: __dirname + "/public",
-    inline: true,
+    open: true,
     hot: true,
     host: "localhost",
-    port: 3000
-  }
+    port: 3000,
+  },
 };
