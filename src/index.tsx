@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import GuGuDan from './lectures/GuGuDan';
+import WordRelay from './lectures/WordRealy';
 
 ReactDOM.render(
   <React.StrictMode>
-    <GuGuDan />
+    <WordRelay />
   </React.StrictMode>,
   document.getElementById('root')
 );
