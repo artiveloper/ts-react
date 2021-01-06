@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 // import GuGuDan from './GuGuDan';
-import WordRelay from './lectures/WordRealy';
+// import WordRelay from './lectures/WordRealy';
+import NumberBaseBall from "./lectures/numberbaseball/NumberBaseBall";
 
 ReactDOM.render(
-  <WordRelay />,
+  <NumberBaseBall />,
   document.getElementById('root')
 );
 
