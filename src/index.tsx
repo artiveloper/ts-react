@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import GuGuDan from './GuGuDan';
+// import GuGuDan from './GuGuDan';
 import WordRelay from './lectures/WordRealy';
-import {hot} from 'react-hot-loader/root';
-
-
-const Hot = hot(WordRelay);
 
 ReactDOM.render(
-  <Hot />,
+  <WordRelay />,
   document.getElementById('root')
 );
 

@@ -17,7 +17,6 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "dev": "webpack serve",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,13 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "awesome-typescript-loader": "^5.2.1",
-    "html-webpack-plugin": "^4.5.1",
-    "react-hot-loader": "^4.13.0",
-    "webpack": "^5.6.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
   }
 }
