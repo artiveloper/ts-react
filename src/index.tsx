@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
+import ResponseCheck from "./lectures/ResponseCheck";
 // import GuGuDan from './GuGuDan';
 // import WordRelay from './lectures/WordRealy';
-import NumberBaseBall from "./lectures/numberbaseball/NumberBaseBall";
+// import NumberBaseBall from "./lectures/numberbaseball/NumberBaseBall";
+
 
 ReactDOM.render(
-  <NumberBaseBall />,
+  <ResponseCheck />,
   document.getElementById('root')
 );
 
