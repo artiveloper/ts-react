@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import ResponseCheck from "./lectures/ResponseCheck";
+// import ResponseCheck from "./lectures/ResponseCheck";
+import RSP from "./lectures/RSP";
 // import GuGuDan from './GuGuDan';
 // import WordRelay from './lectures/WordRealy';
 // import NumberBaseBall from "./lectures/numberbaseball/NumberBaseBall";
 
 
 ReactDOM.render(
-  <ResponseCheck />,
+  <RSP />,
   document.getElementById('root')
 );
 
